@@ -1,4 +1,12 @@
-# AngularNativeDragDropDemo
+# Angular Native Drag Drop Demo
+
+> Current Angular Version: 8.0.0
+
+This repository is meant to demonstrate how native drag and drop with Angular CDK can be implemented without using extra dependencies like [@beyerleinf/ngx-dnd](https://www.npmjs.com/package/@beyerleinf/ngx-dnd).
+
+For a more detailed explanation visit [the official Angular CDK documentation](https://material.angular.io/cdk/drag-drop/overview)
+
+<!-- # AngularNativeDragDropDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.2.
 
@@ -24,4 +32,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md). -->
