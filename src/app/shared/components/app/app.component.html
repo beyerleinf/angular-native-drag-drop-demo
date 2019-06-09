@@ -1,0 +1,23 @@
+<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/">Angualr CDK Drag and Drop Demo</a>
+</nav>
+
+<div class="container-fluid mt-5">
+  <div class="row">
+    <div class="col-md-3">
+      <ng-container *ngFor="let item of routes">
+        <h3>{{ item.name }}</h3>
+        <ul class="nav flex-column">
+          <li class="nav-item" *ngFor="let route of item.children">
+            <a class="nav-link active" [routerLink]="route.route">{{
+              route.name
+            }}</a>
+          </li>
+        </ul>
+      </ng-container>
+    </div>
+    <div class="col-md-9">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

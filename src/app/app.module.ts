@@ -1,18 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+
+import { DndModule } from '@beyerleinf/ngx-dnd';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from './shared/components';
+import {
+  SimpleSortingComponent,
+  SimpleSortingCopyComponent,
+  MultiSortingComponent,
+} from './sorting';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SimpleSortingComponent,
+    SimpleSortingCopyComponent,
+    MultiSortingComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, DragDropModule, DndModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
