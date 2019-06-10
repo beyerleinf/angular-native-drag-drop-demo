@@ -13,6 +13,7 @@ export class AppComponent {
         { name: 'Simple sorting', route: '/sorting/simple' },
         { name: 'Simple sorting with copy', route: '/sorting/simple-copy' },
         { name: 'Sorting multiple lists', route: '/sorting/multi' },
+        { name: 'Sorting embedded lists', route: '/sorting/embedded' },
       ],
     },
   ];

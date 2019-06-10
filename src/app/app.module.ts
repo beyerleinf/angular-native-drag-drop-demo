@@ -10,6 +10,7 @@ import {
   SimpleSortingComponent,
   SimpleSortingCopyComponent,
   MultiSortingComponent,
+  EmbeddedSortingComponent,
 } from './sorting';
 
 @NgModule({
@@ -18,6 +19,7 @@ import {
     SimpleSortingComponent,
     SimpleSortingCopyComponent,
     MultiSortingComponent,
+    EmbeddedSortingComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, DragDropModule, DndModule],
   providers: [],

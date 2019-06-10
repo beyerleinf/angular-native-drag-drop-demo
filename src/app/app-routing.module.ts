@@ -4,6 +4,7 @@ import {
   SimpleSortingComponent,
   SimpleSortingCopyComponent,
   MultiSortingComponent,
+  EmbeddedSortingComponent,
 } from './sorting';
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
       { path: 'simple', component: SimpleSortingComponent },
       { path: 'simple-copy', component: SimpleSortingCopyComponent },
       { path: 'multi', component: MultiSortingComponent },
+      { path: 'embedded', component: EmbeddedSortingComponent },
     ],
   },
 ];
