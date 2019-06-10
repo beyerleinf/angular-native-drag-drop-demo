@@ -28,3 +28,50 @@
     </div>
   </div>
 </div>
+
+<hr />
+
+<h2>ngx-dnd</h2>
+<small class="text-muted">Does not work without this checkbox</small>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" [(ngModel)]="dragEnabled" /> Drag Containers
+  </label>
+</div>
+<div class="row">
+  <div
+    class="col-md-12"
+    dnd-sortable-container
+    [sortableData]="items"
+    [dropZones]="['items']"
+  >
+    <div
+      class="card mb-3"
+      [class.mt-3]="isFirst"
+      *ngFor="let item of items; let isFirst = first; let i = index"
+      dnd-sortable
+      [sortableIndex]="i"
+      [dragEnabled]="dragEnabled"
+    >
+      <div class="card-body">
+        <h5 class="card-title">{{ item.name }}</h5>
+        <ul
+          class="list-group"
+          dnd-sortable-container
+          [sortableData]="item.children"
+          [dropZones]="['subs' + i]"
+        >
+          <li
+            class="list-group-item"
+            *ngFor="let sub of item.children; let j = index"
+            dnd-sortable
+            [sortableIndex]="j"
+            [dragEnabled]="!dragEnabled"
+          >
+            {{ sub.name }}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

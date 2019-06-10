@@ -7,6 +7,8 @@ import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
   styleUrls: ['./embedded-sorting.component.css'],
 })
 export class EmbeddedSortingComponent {
+  dragEnabled: boolean;
+
   items = [
     {
       name: 'Item 1',
