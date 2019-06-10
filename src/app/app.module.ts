@@ -11,7 +11,9 @@ import {
   SimpleSortingCopyComponent,
   MultiSortingComponent,
   EmbeddedSortingComponent,
+  RecycleSortingComponent,
 } from './sorting';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,15 @@ import {
     SimpleSortingCopyComponent,
     MultiSortingComponent,
     EmbeddedSortingComponent,
+    RecycleSortingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, DragDropModule, DndModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    DragDropModule,
+    DndModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -8,3 +8,6 @@ export { MultiSortingComponent } from './multi-sorting/multi-sorting.component';
 export {
   EmbeddedSortingComponent,
 } from './embedded-sorting/embedded-sorting.component';
+export {
+  RecycleSortingComponent,
+} from './recycle-sorting/recycle-sorting.component';
